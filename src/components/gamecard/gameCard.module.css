@@ -1,4 +1,3 @@
-/* Estilos que antes estavam no home.module.css, agora estão aqui */
 .gameLink {
   text-decoration: none;
   color: inherit;
@@ -10,7 +9,7 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  height: 100%; /* Garante que todos os cards na grade tenham a mesma altura */
+  height: 100%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -48,28 +47,31 @@
 }
 
 .gameContent a {
-  display: block;
-  background-color: var(--primary);
-  color: var(--text-primary);
-  padding: 0.75rem;
-  border-radius: 4px;
+  display: inline-block;
   text-align: center;
   font-weight: 500;
+  color: var(--text-primary);
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  border: none;
   margin-top: auto;
+  cursor: pointer;
+  background: linear-gradient(45deg, var(--border), var(--primary));
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
 }
 
 .gameContent a:hover {
-  background-color: var(--primary-hover);
-  color: var(--text-primary);
-}
-/* Adicione esta classe ao seu gameCard.module.css */
-.gameCardContainer {
-  cursor: pointer;
-  height: 100%; /* Garante que o container ocupe a altura toda */
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(146, 77, 191, 0.4);
+  background: linear-gradient(45deg, var(--primary), var(--primary-hover));
 }
 
-/* ... resto do seu CSS (.game, .gameContent, etc.) ... */
-/* ... Adicione este código ao final do arquivo ... */
+.gameCardContainer {
+  cursor: pointer;
+  height: 100%;
+}
 
 .info {
   display: flex;
@@ -78,13 +80,13 @@
 }
 
 .info p {
-  flex-grow: 1; /* Faz o parágrafo ocupar o espaço, empurrando o ícone */
-  margin-bottom: 0; /* Remove a margem que estava no parágrafo */
+  flex-grow: 1;
+  margin-bottom: 0;
 }
 
 .platformIcon {
   font-size: 1.2rem;
   color: var(--text-secondary);
   margin-left: 1rem;
-  align-self: flex-end; /* Alinha o ícone na parte de baixo */
+  align-self: flex-end;
 }

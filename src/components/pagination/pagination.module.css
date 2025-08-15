@@ -4,7 +4,7 @@
   list-style: none;
   padding: 0;
   margin-top: 2rem;
-  flex-wrap: wrap; /* Permite que os botões quebrem em telas menores */
+  flex-wrap: wrap;
   gap: 0.5rem;
 }
 
@@ -28,7 +28,6 @@
   color: var(--text-primary);
 }
 
-/* Estilo para o botão da página ativa */
 .pageLink.active {
   background-color: var(--primary);
   color: var(--text-primary);

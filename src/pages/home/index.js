@@ -33,7 +33,7 @@ function Home() {
 
     return (
         <div className="container">
-            <h1 className={styles.title}>{genreName ? `Gênero: ${genreName}` : "Descubra Novos Jogos"}</h1>
+            <h1 className={styles.title}>{genreName ? `Gênero: ${genreName}` : "Jogos Grátis"}</h1>
             
             {filteredGames.length > 0 ? (
                 <div className={styles.gameList}>

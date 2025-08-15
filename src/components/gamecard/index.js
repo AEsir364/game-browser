@@ -27,13 +27,14 @@ function GameCard({ game }) {
                     </div>
                     
                     <a
-                        href={game.game_url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        onClick={(e) => e.stopPropagation()}
-                    >
-                        Jogar Agora
-                    </a>
+                            href={game.game_url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={(e) => e.stopPropagation()}
+                        >
+                            <i className="fa-solid fa-play" style={{ marginRight: '8px' }}></i>
+                            Jogar Agora
+                        </a>
                 </div>
             </article>
         </div>

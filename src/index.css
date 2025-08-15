@@ -1,10 +1,11 @@
 :root {
-  --background: #141414;
-  --surface: #1C1C1C;
-  --primary: #E50914;
-  --primary-hover: #F61D2B;
+  --background: #080118;
+  --surface: #4A2574;
+  --primary: #924DBF;
+  --primary-hover: #9E72C3;
+  --border: #7338A0;
   --text-primary: #FFFFFF;
-  --text-secondary: #B3B3B3;
+  --text-secondary: #c7b3e0;
 }
 
 * {
