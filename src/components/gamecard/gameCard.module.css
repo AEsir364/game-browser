@@ -1,0 +1,90 @@
+/* Estilos que antes estavam no home.module.css, agora estão aqui */
+.gameLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.game {
+  background-color: var(--surface);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Garante que todos os cards na grade tenham a mesma altura */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.game:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.game img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.gameContent {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; 
+}
+
+.gameContent strong {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  min-height: 58px; 
+}
+
+.gameContent p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+.gameContent a {
+  display: block;
+  background-color: var(--primary);
+  color: var(--text-primary);
+  padding: 0.75rem;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 500;
+  margin-top: auto;
+}
+
+.gameContent a:hover {
+  background-color: var(--primary-hover);
+  color: var(--text-primary);
+}
+/* Adicione esta classe ao seu gameCard.module.css */
+.gameCardContainer {
+  cursor: pointer;
+  height: 100%; /* Garante que o container ocupe a altura toda */
+}
+
+/* ... resto do seu CSS (.game, .gameContent, etc.) ... */
+/* ... Adicione este código ao final do arquivo ... */
+
+.info {
+  display: flex;
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+.info p {
+  flex-grow: 1; /* Faz o parágrafo ocupar o espaço, empurrando o ícone */
+  margin-bottom: 0; /* Remove a margem que estava no parágrafo */
+}
+
+.platformIcon {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin-left: 1rem;
+  align-self: flex-end; /* Alinha o ícone na parte de baixo */
+}

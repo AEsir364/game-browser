@@ -1,0 +1,37 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+  flex-wrap: wrap; /* Permite que os botões quebrem em telas menores */
+  gap: 0.5rem;
+}
+
+.pageItem {
+  margin: 0 5px;
+}
+
+.pageLink {
+  color: var(--text-secondary);
+  background-color: var(--surface);
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+  border: 1px solid #333;
+}
+
+.pageLink:hover {
+  background-color: #333;
+  color: var(--text-primary);
+}
+
+/* Estilo para o botão da página ativa */
+.pageLink.active {
+  background-color: var(--primary);
+  color: var(--text-primary);
+  border-color: var(--primary);
+  font-weight: 700;
+}
