@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import styles from './header.module.css';
 
-const genres = [ "MMORPG", "Shooter", "MOBA", "Anime", "Battle Royale", "Strategy", "Fantasy", "Sci-Fi", "Card Games", "Racing", "Fighting", "Social", "Sports" ];
+const genres = [ "MMORPG", "Shooter", "MOBA", "Battle Royale", "Strategy", "Racing", "Fighting", "Social", "Sports" ];
 
 function Header() {
     const [search, setSearch] = useState("");
